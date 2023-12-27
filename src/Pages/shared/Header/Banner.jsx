@@ -1,7 +1,7 @@
 
 const Banner = () => {
   return (
-    <div className="bg-purple-200">
+    <div className="bg-purple-400">
       <div className="w-8/12 mx-auto">
         <div className="hero-content flex-col justify-around lg:flex-row-reverse">
           <img

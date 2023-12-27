@@ -12,7 +12,9 @@ const MainLayout = () => {
             <div className='min-h-screen'>
                 <Outlet></Outlet>
             </div>
+            <div className=''>
             <Footer></Footer>
+            </div>
         </div>
     );
 };
