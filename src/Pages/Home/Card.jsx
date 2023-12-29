@@ -3,89 +3,140 @@ import img1 from "../../assets/img1.png";
 import img2 from "../../assets/img2.png";
 import img4 from "../../assets/img4.png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Card = () => {
+  useEffect(() => {
+    Aos.init({ duration: "1000", delay: "500" });
+  }, []);
+
   return (
     <div className="">
-
       <div className="mb-8 md:relative">
         {/* first div */}
-        <div className="md:h-96">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="md:h-96"
+        >
           <div className="pt-8">
-            <h1 className="text-6xl mt-8 font-bold text-black text-center">
-              My Projects
+            <h1 className="text-xl md:text-5xl text-zinc-950 font-semibold text-center mt-8">
+              My{" "}
+              <span className="text-blue-700 font-extrabold">
+                Web Development
+              </span>{" "}
+              Projects
             </h1>
-            <h1 className="text-xl mt-6 font-bold text-black text-center">
-              Here are some projects that I created. You can see and visit these
-              projects
-            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="text-md font-semibold text-black text-center mt-4"
+            >
+              With over one year of hands-on experience, I have successfully
+              developed a diverse range of software projects <br /> across
+              various categories. Heres a glimpse of my primary technical skills
+              and the technologies I wield. <br /> For a more in-depth
+              exploration of my journey, feel free to peruse <br /> my online
+              resume and project portfolio
+            </p>
+            {/* <h1 className="text-md text-md font-semibold text-black mt-4 text-center">
+              Here are some projects that I created using React Node.js MongoDB.{" "}
+              <br /> You can see and visit these projects by clicking the visit
+              button.
+            </h1> */}
           </div>
         </div>
 
         {/* second div */}
         <div className="md:bg-purple-400 py-10 md:h-60">
-
           <div className="md:absolute md:top-60 md:inset-x-0">
-          <div className=" w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3">
-            {/* card 1 */}
-            <div className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-80 ">
-              <div className="z-10">
-                <div className="overflow-hidden">
-                  <img
-                    className="w-[300px]  hover:scale-[1.5] duration-1000"
-                    src={img1}
-                    alt=""
-                  />
-                  <Link to="https://pizzan-restaurant.web.app/" target="_blank">
-                    <div className="flex pt-8 justify-center items-center">
-                      <button className="btn btn-primary">Visit Now</button>
-                    </div>
-                  </Link>
+            <div
+              data-aos="zoom-out"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className=" w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3"
+            >
+              {/* card 1 */}
+              <div className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-80 ">
+                <div className="z-10">
+                  <div className="overflow-hidden">
+                    <img
+                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      src={img1}
+                      alt=""
+                    />
+                    <Link
+                      to="https://pizzan-restaurant.web.app/"
+                      target="_blank"
+                    >
+                      <div className="flex pt-8 justify-center items-center">
+                        <button className="btn btn-sm btn-primary">
+                          Visit Now
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* card 2 */}
-            <div className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
-              <div className="z-10">
-                <div className="overflow-hidden">
-                  <img
-                    className="w-[300px]  hover:scale-[1.5] duration-1000"
-                    src={img2}
-                    alt=""
-                  />
-                  <Link to="https://contest-hub-website.web.app/" target="_blank">
-                    <div className="flex pt-8 justify-center items-center">
-                      <button className="btn btn-primary">Visit Now</button>
-                    </div>
-                  </Link>
+              {/* card 2 */}
+              <div className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+                <div className="z-10">
+                  <div className="overflow-hidden">
+                    <img
+                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      src={img2}
+                      alt=""
+                    />
+                    <Link
+                      to="https://contest-hub-website.web.app/"
+                      target="_blank"
+                    >
+                      <div className="flex pt-8 justify-center items-center">
+                        <button className="btn btn-sm btn-primary">
+                          Visit Now
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* card 3 */}
-            <div className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
-              <div className="z-10">
-                <div className="overflow-hidden">
-                  <img
-                    className="w-[300px]  hover:scale-[1.5] duration-1000"
-                    src={img4}
-                    alt=""
-                  />
-                  <Link to="https://social-event-management-beee2.web.app/" target="_blank">
-                    <div className="flex pt-8 justify-center items-center">
-                      <button className="btn btn-primary">Visit Now</button>
-                    </div>
-                  </Link>
+              {/* card 3 */}
+              <div className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+                <div className="z-10">
+                  <div className="overflow-hidden">
+                    <img
+                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      src={img4}
+                      alt=""
+                    />
+                    <Link
+                      to="https://social-event-management-beee2.web.app/"
+                      target="_blank"
+                    >
+                      <div className="flex pt-8 justify-center items-center">
+                        <button className="btn btn-sm btn-primary">
+                          Visit Now
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-
         </div>
-
-
       </div>
     </div>
   );
