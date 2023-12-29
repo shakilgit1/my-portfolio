@@ -38,7 +38,7 @@ const Card = () => {
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              className="text-md font-semibold text-black text-center mt-4"
+              className="w-8/12 mx-auto text-md font-semibold text-black text-center mt-4"
             >
               With over one year of hands-on experience, I have successfully
               developed a diverse range of software projects <br /> across
@@ -47,27 +47,23 @@ const Card = () => {
               exploration of my journey, feel free to peruse <br /> my online
               resume and project portfolio
             </p>
-            {/* <h1 className="text-md text-md font-semibold text-black mt-4 text-center">
-              Here are some projects that I created using React Node.js MongoDB.{" "}
-              <br /> You can see and visit these projects by clicking the visit
-              button.
-            </h1> */}
+         
           </div>
         </div>
 
         {/* second div */}
         <div className="md:bg-purple-400 py-10 md:h-60">
           <div className="md:absolute md:top-60 md:inset-x-0">
-            <div
-              data-aos="zoom-out"
+            <div className="w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3">
+              {/* card 1 */}
+              <div
+              data-aos="flip-left"
               data-aos-offset="200"
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              className=" w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3"
-            >
-              {/* card 1 */}
-              <div className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-80 ">
+
+              className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-80 ">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
@@ -90,7 +86,14 @@ const Card = () => {
               </div>
 
               {/* card 2 */}
-              <div className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+              <div
+              data-aos="flip-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+
+              className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
@@ -113,7 +116,14 @@ const Card = () => {
               </div>
 
               {/* card 3 */}
-              <div className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+              <div 
+              data-aos="flip-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+
+              className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img

@@ -20,24 +20,13 @@ const Skills = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <h1 className="text-3xl md:text-5xl font-extrabold text-indigo-950 mt-8">
+        <h1 className="w-8/12 mx-auto text-3xl md:text-5xl font-extrabold text-indigo-950 mt-8">
           <span className="">Language</span>
           <span className="text-blue-700"> Tools and Technology</span> <br />
           <span className="">That I know and use</span>
         </h1>
 
-        {/* <p data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-         className="text-md font-semibold text-black">
-          With over one year of hands-on experience, I have successfully
-          developed a diverse range of software projects <br /> across various
-          categories. Heres a glimpse of my primary technical skills and the
-          technologies I wield. <br /> For a more in-depth exploration of my journey,
-          feel free to peruse <br /> my online resume and project portfolio
-        </p> */}
+      
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 w-7/12 mx-auto mt-20">

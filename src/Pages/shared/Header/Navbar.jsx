@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaAlignJustify} from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 import { Link, NavLink } from "react-router-dom";
@@ -6,6 +6,23 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [icon, setIcon] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the user has scrolled down more than 100 pixels
+      const isScrolling = window.scrollY > 100;
+      setScrolling(isScrolling);
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
 
     const OpenMenu = () =>{
         setIcon(!icon)
@@ -13,8 +30,9 @@ const Navbar = () => {
 
 
     return (
-        <div className="">
-          <div className="flex justify-around items-center bg-cyan-100 py-2 bg-transparent">
+        <div className={`w-full p-2 ${scrolling ? 'bg-blue-700 text-white' : 'bg-transparent'} transition-all duration-300 ease-in-out`}>
+           
+           <div className="flex justify-around items-center bg-cyan-100 py-2 bg-transparent">
             <div className="block relative md:hidden">
                 <span onClick={OpenMenu} className="text-2xl">
                 {icon ? <><GrClose /></> : <><FaAlignJustify /></>}
@@ -59,7 +77,9 @@ const Navbar = () => {
             <div className="btn btn-sm btn-outline border-b-2 border-0 hover:bg-blue-600 hover:text-black text-black">
             <Link to="https://www.linkedin.com/in/shakil-islam-4332722a3/" target="_blank"><button>Hire Me</button></Link>
             </div>
-          </div>
+           </div>
+          
+          
         </div>
     );
 };
