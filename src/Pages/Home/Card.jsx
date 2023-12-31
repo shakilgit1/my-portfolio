@@ -63,11 +63,11 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-80 ">
+              className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80 ">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
-                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      className="w-[235px] md:w-[300px]  hover:scale-[1.5] duration-1000"
                       src={img1}
                       alt=""
                     />
@@ -93,11 +93,11 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+              className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
-                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      className="w-[235px] md:w-[300px]  hover:scale-[1.5] duration-1000"
                       src={img2}
                       alt=""
                     />
@@ -123,11 +123,11 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-80">
+              className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
-                      className="w-[300px]  hover:scale-[1.5] duration-1000"
+                      className="w-[235px] md:w-[300px]  hover:scale-[1.5] duration-1000"
                       src={img4}
                       alt=""
                     />

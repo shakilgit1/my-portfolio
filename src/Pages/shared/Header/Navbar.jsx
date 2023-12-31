@@ -48,10 +48,10 @@ const Navbar = () => {
                       isActive? "active text-red-500 border-red-400": isPending? "pending": ""}><li>Service</li>
                 </NavLink>
                 <NavLink to="/about" className={({ isActive, isPending }) =>
-                      isActive? "active text-red-500 border-red-400": isPending? "pending": ""}><li>About</li>
+                      isActive? "active text-red-500 border-red-400": isPending? "pending": ""}><li>About Me</li>
                 </NavLink>
                 <NavLink to="/contact" className={({ isActive, isPending }) =>
-                      isActive? "active text-red-500 border-red-400": isPending? "pending": ""}><li>Contact Us</li>
+                      isActive? "active text-red-500 border-red-400": isPending? "pending": ""}><li>Contact Me</li>
                 </NavLink>
 
                  </div>
@@ -67,15 +67,15 @@ const Navbar = () => {
                       isActive? "active text-red-500 border-red-400 border-b-2": isPending? "pending": ""}><li>Service</li>
                 </NavLink>
                 <NavLink to="/about" className={({ isActive, isPending }) =>
-                      isActive? "active text-red-500 border-red-400 border-b-2": isPending? "pending": ""}><li>About</li>
+                      isActive? "active text-red-500 border-red-400 border-b-2": isPending? "pending": ""}><li>About Me</li>
                 </NavLink>
                 <NavLink to="/contact" className={({ isActive, isPending }) =>
-                      isActive? "active text-red-500 border-red-400 border-b-2": isPending? "pending": ""}><li>Contact Us</li>
+                      isActive? "active text-red-500 border-red-400 border-b-2": isPending? "pending": ""}><li>Contact Me</li>
                 </NavLink>
                 
             </div>
-            <div className="btn btn-sm btn-outline border-b-2 border-0 hover:bg-blue-600 hover:text-black text-black">
-            <Link to="https://www.linkedin.com/in/shakil-islam-4332722a3/" target="_blank"><button>Hire Me</button></Link>
+            <div className="btn btn-sm btn-outline border-b-2 border-0 hover:bg-blue-600 hover:text-white text-black">
+            <Link to="/contact"><button>Say Hello</button></Link>
             </div>
            </div>
           
