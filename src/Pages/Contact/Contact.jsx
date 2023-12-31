@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { FaGithub, FaHouse, FaMessage, FaPhone } from 'react-icons/fa6';
 
 const Contact = () => {
 
@@ -27,9 +28,66 @@ const Contact = () => {
 
   return (
     <div>
-      <h2
+
+      <div>
+        <h2
+        data-aos="flip-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className="text-6xl text-center font-bold mt-6">Md. Shakil Islam</h2>
+        
+        <div
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        className='md:w-7/12 md:mx-auto text-center mt-8 flex'>
+          <div className='md:grid grid-cols-2 gap-8 mx-auto'>
+          <div>
+            <h1 className='font-bold text-2xl text-blue-600'>Home</h1>
+           <div className='flex gap-4 justify-center items-center'>
+           <FaHouse></FaHouse>
+          <span className='mt-2 flex text-xl'>Natore, Rajshahi <br /> Bangladesh</span>
+           </div>
+          </div>
+        <div>
+        <div>
+            <h1 className='font-bold text-2xl text-blue-600'>Phone</h1>
+           <div className='flex gap-4 justify-center items-center'>
+           <FaPhone></FaPhone>
+          <span className='mt-2 flex text-xl'>+8801876232402</span>
+           </div>
+          </div>
+        </div>
+
+          <div>
+            <h1 className='font-bold text-2xl text-blue-600'>GitHub</h1>
+           <div className='flex gap-4 justify-center items-center text-center'>
+           <FaGithub></FaGithub>
+          <span className='mt-2 flex text-xl'>github.com/shakilgit1</span>
+           </div>
+          </div>
+        <div>
+        <div>
+            <h1 className='font-bold text-2xl text-blue-600'>Email</h1>
+           <div className='flex gap-4 justify-center items-center'>
+           <FaMessage></FaMessage>
+          <span className='mt-2 flex text-md md:text-xl'>programmershakil99@gmail.com</span>
+           </div>
+          </div>
+        </div>
+       
+          </div>
+        </div>
+      </div>
+
+    <div className='my-12'>
+    <h2
       data-aos="fade-up"
-       className="text-xl text-center font-bold my-8">Contact Me</h2>
+       className="text-4xl text-center font-bold my-8">Message Me</h2>
 
       <form
        data-aos="zoom-in"
@@ -63,6 +121,7 @@ const Contact = () => {
         </div>
          </div>
       </form>
+    </div>
     </div>
   );
 };
