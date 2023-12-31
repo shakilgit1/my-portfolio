@@ -28,7 +28,7 @@ const Banner = () => {
             data-aos-easing="ease-in-out"
           >
             <h1 className="text-5xl font-bold">Hi, I am Shakil</h1>
-            <p className="py-6 text-lg">
+            <p className="py-6 text-xl">
               I am a <span className="text-blue-800">Web Developer</span> and{" "}
               <span className="text-red-500">Video Editor</span>
             </p>
