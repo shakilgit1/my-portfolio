@@ -9,8 +9,8 @@ const Banner = () => {
 
   return (
     <div className="bg-purple-400">
-      <div className="w-8/12 mx-auto">
-        <div className="hero-content flex-col justify-around lg:flex-row-reverse">
+      <div className="xl:h-[70vh] flex items-center justify-center">
+        <div className="w-10/12 mx-auto hero-content flex-col justify-evenly lg:flex-row-reverse">
           <img
            data-aos="zoom-in"
            data-aos-offset="200"
