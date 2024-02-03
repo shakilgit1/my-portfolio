@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTop from "../../hooks/scrollTop";
 
 const About = () => {
 
@@ -10,6 +11,7 @@ const About = () => {
 
     return (
         <div className="">
+          <ScrollToTop></ScrollToTop>
           {/* <h2 className="text-6xl text-center font-bold my-8">About Me</h2> */}
           <div className="flex flex-col gap-8 mt-8">
           <div className="w-7/12 mx-auto flex justify-center">

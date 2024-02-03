@@ -54,7 +54,7 @@ const Card = () => {
         {/* second div */}
         <div className="md:bg-purple-400 py-10 md:h-60">
           <div className="md:absolute md:top-60 md:inset-x-0">
-            <div className="w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3">
+            <div className="w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-10">
               {/* card 1 */}
               <div
               data-aos="flip-left"
@@ -63,7 +63,7 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80 ">
+              className="box bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-64 lg:w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
@@ -93,7 +93,7 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80">
+              className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-64 lg:w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img
@@ -123,7 +123,7 @@ const Card = () => {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
 
-              className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-80">
+              className="box bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 h-80 w-64 md:w-64 lg:w-80">
                 <div className="z-10">
                   <div className="overflow-hidden">
                     <img

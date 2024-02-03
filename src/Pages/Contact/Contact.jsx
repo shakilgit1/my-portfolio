@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { FaGithub, FaHouse, FaMessage, FaPhone } from 'react-icons/fa6';
+import ScrollToTop from '../../hooks/scrollTop';
 
 const Contact = () => {
 
@@ -28,7 +29,8 @@ const Contact = () => {
 
   return (
     <div>
-
+      <ScrollToTop></ScrollToTop>
+      
       <div>
         <h2
         data-aos="flip-left"

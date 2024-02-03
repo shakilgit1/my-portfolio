@@ -4,10 +4,12 @@ import Skills from "./Skills";
 import Counter from "./Counter";
 import Video from "./Video";
 import Editing from "./Editing";
+import ScrollToTop from "../../hooks/scrollTop";
 
 const Home = () => {
   return (
     <div className="">
+      <ScrollToTop></ScrollToTop>
       <Banner></Banner>
       <Skills></Skills>
       <Counter></Counter>
