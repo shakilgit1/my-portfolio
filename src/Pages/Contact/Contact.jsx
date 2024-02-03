@@ -21,6 +21,7 @@ const Contact = () => {
         emailjs.sendForm('service_peqa85s', 'template_vm9xfjs', form.current, 'Lqx8BimxgXH_XyERk')
         .then((result) => {
             toast.success('Your message sent to Shakil');
+            form.current.reset()
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
