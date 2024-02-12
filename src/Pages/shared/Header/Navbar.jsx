@@ -11,7 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled down more than 100 pixels
-      const isScrolling = window.scrollY > 100;
+      const isScrolling = window.scrollY > 10;
       setScrolling(isScrolling);
     };
 

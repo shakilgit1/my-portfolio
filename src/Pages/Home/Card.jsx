@@ -52,7 +52,7 @@ const Card = () => {
         </div>
 
         {/* second div */}
-        <div className="md:bg-purple-400 py-10 md:h-60">
+        <div className="md:bg-black py-10 md:h-60" style={{backgroundImage: 'url(https://i.ibb.co/c2K9nsG/2.png)'}}>
           <div className="md:absolute md:top-60 md:inset-x-0">
             <div className="w-8/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-10">
               {/* card 1 */}
