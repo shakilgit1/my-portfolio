@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import Video from "./Video";
 import Editing from "./Editing";
 import ScrollToTop from "../../hooks/scrollTop";
+import Reviews from "./Reviews";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Card></Card>
       <Video></Video>
       <Editing></Editing>
+      <Reviews></Reviews>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
     return (
-        <div className='font-googlePlay'>
+        <div className='font-googlePlay bg-cover' style={{backgroundImage: 'url(https://i.ibb.co/mz55R0d/pexels-photo.webp)'}}>
             <div className='sticky z-10 top-0'>
             <Navbar></Navbar>
             </div>

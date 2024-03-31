@@ -20,9 +20,8 @@ const Skills = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <h1 className="w-8/12 mx-auto text-3xl md:text-5xl font-extrabold text-indigo-950 mt-8">
-          <span className="">Language</span>
-          <span className="text-blue-700"> Tools and Technology</span> <br />
+        <h1 className="w-8/12 mx-auto text-3xl md:text-5xl font-semibold text-indigo-950 mt-8">
+          <span className="text-blue-700">Language Tools and Technology</span> <br />
           <span className="">That I know and use</span>
         </h1>
 

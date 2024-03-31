@@ -21,7 +21,7 @@ const Counter = () => {
         className="text-center space-y-5 mt-20 my-16"
       >
         <h1 className="text-xl md:text-5xl text-zinc-950 font-semibold">
-          <span className="text-blue-700 font-extrabold">Web Development</span>
+          <span className="text-blue-700 font-semibold">Web Development</span>
         </h1>
       </div>
 

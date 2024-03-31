@@ -21,7 +21,7 @@ const Video = () => {
         className="text-center space-y-5 mt-20 my-16"
       >
         <h1 className="text-xl md:text-5xl text-zinc-950 font-semibold">
-          <span className="text-red-500 font-extrabold">Video Editing</span>
+          <span className="text-red-500 font-semibold">Video Editing</span>
         </h1>
       </div>
 

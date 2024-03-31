@@ -28,16 +28,17 @@ const Banner = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
+            className="w-[400px]"
           >
             <h1 className="text-5xl font-bold text-blue-500">Hi, I am <span className="text-sky-400">Shakil</span></h1>
 
             <p className="py-6 font-bold text-2xl text-white">
-              I am a{" "}
+              <span className="text-xl">Professional in</span>{" "}
               <Typical
                 className="text-red-500"
                 loop={Infinity}
                 wrapper="b"
-                steps={["Web Developer", 2000, "Video Editor", 1000]}
+                steps={["Web Development", 2000, "Video Editing", 1000]}
               />
             </p>
 

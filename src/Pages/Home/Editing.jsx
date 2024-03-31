@@ -22,7 +22,7 @@ const Editing = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <h1 className="w-8/12 mx-auto text-3xl md:text-5xl font-extrabold text-indigo-950 mt-14">
+        <h1 className="w-8/12 mx-auto text-3xl md:text-5xl font-semibold text-indigo-950 mt-14">
           <span className="">My</span>
           <span className="text-red-500"> Video Editing </span>
           <span className="">Softwares</span>

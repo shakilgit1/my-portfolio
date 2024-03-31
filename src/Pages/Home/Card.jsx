@@ -27,7 +27,7 @@ const Card = () => {
           <div className="pt-8">
             <h1 className="text-xl md:text-5xl text-zinc-950 font-semibold text-center mt-8">
               My{" "}
-              <span className="text-blue-700 font-extrabold">
+              <span className="text-blue-700 font-semibold">
                 Web Development
               </span>{" "}
               Projects
@@ -38,7 +38,7 @@ const Card = () => {
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              className="w-8/12 mx-auto text-md font-semibold text-black text-center mt-4"
+              className="w-8/12 mx-auto text-md text-black text-center mt-4"
             >
               With over one year of hands-on experience, I have successfully
               developed a diverse range of software projects <br /> across
